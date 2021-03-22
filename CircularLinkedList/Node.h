@@ -4,8 +4,8 @@
 
 struct Node
 {
-	int key;
+	int key = -1;
 	Data d;
-	Node* next;
+	Node* next = NULL;
 };
 

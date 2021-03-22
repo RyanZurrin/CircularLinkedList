@@ -1,5 +1,4 @@
 ﻿#pragma once
-#include <utility>
 
 #include "DataInterface.h"
 
@@ -12,8 +11,8 @@ inline Data::Data()
 
 inline Data::Data(std::string n, std::string bd, double b)
 {
-	name = std::move(n);
-	dob  = std::move(bd);
+	name = n;
+	dob  = bd;
 	balance = b;
 }
 
@@ -49,7 +48,7 @@ inline void Data::setBalance(const double b)
 
 inline void Data::displayData()
 {
-	printf("name: %s \nDOB: %s \nBalance: %.2f\n",
+	printf("\nname: %s \nDOB: %s \nBalance: %.2f\n",
 		name.c_str(),
 		dob.c_str(),
 		balance);

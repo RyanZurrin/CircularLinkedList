@@ -51,6 +51,13 @@ public:
 	bool getItem(int val, Data& _d);
 
 	/// <summary>
+	/// Finds the item.
+	/// </summary>
+	/// <param name="val">The value.</param>
+	/// <returns></returns>
+	bool inList(int val);
+
+	/// <summary>
 	/// Gets the qty.
 	/// </summary>
 	/// <returns>returns the size of the list as an integer</returns>
@@ -82,7 +89,13 @@ public:
 	/// <summary>
 	/// Displays this instance of each key in the list.
 	/// </summary>
-	void display()const;
+	void displayKeys()const;
+
+	/// <summary>
+	/// Displays the data.
+	/// </summary>
+	/// <param name="_key">The key.</param>
+	void displayData(const int _key);
 
 	/// <summary>
 	/// Finalizes an instance of the <see cref="CircularLinkedList"/> class.
