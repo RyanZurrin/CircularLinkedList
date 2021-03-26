@@ -1,11 +1,20 @@
 #pragma once
 #include "Data.h"
+/*
+typedef struct data
+{
+	char toolname[35];
+	int quantity;
+	double cost;
+	void displayData();
+};
+*/
 
-
-struct Node
+struct node
 {
 	int key = -1;
-	Data d;
-	Node* next = NULL;
-};
+	data d;
+	//data d;
+	node* next = NULL;
 
+};

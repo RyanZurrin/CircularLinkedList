@@ -3,6 +3,8 @@
 #define CIRCULARLINKEDLIST_H
 #include "Node.h"
 
+
+
 /**
  * \brief circular linked list with no duplicates and sorted upon each
  * insertion of an element to the list. Instances of list can be made using the
@@ -29,7 +31,7 @@ public:
 	/// <param name="val">The key value of data.</param>
 	/// <param name="_d">The data to be added.</param>
 	/// <returns></returns>
-	bool addItem(int val, Data _d);
+	bool addItem(int val, data _d);
 
 	/// <summary>
 	/// Deletes the list node the key matching the value passed in.
@@ -39,7 +41,7 @@ public:
 	/// which allows for verification that the right thing was deleted.</param>
 	/// <returns>true if key value and data to be deleted was found :
 	/// else false</returns>
-	bool deleteItem(int val, Data& _d);
+	bool deleteItem(int val, data& _d);
 
 	/// <summary>
 	/// Gets the data from list that matches the key value of the argument.
@@ -48,7 +50,7 @@ public:
 	/// <param name="_d">The reference to a data member to save the results
 	/// of the search to.</param>
 	/// <returns>true if the data was found : else false</returns>
-	bool getItem(int val, Data& _d);
+	bool getItem(int val, data& _d);
 
 	/// <summary>
 	/// Finds the item.
@@ -105,8 +107,8 @@ public:
 private:
 	int qty;
 	int max;
-	Node* start;
-	Node* curr;
+	node* start;
+	node* curr;
 
 };
 
