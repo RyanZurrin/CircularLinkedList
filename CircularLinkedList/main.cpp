@@ -4,13 +4,13 @@
 int main()
 {
 	CircularLinkedList test;
-	Data rz("Ryan Zurrin", "7/22/1981", 55.55);
-	Data gp("Greg Panczner", "1/20/1955", 22.78);
-	Data bp("Beverly Provost", "12/29/1965", -78.88);
-	Data zr("Ryan Zurrin", "7/22/1981", 55.55);
-	Data pg("Greg Panczner", "1/20/1955", 22.78);
-	Data pb("Beverly Provost", "12/29/1965", -78.88);
-	Data removed;
+	data rz("Ryan Zurrin", "7/22/1981", 55.55);
+	data gp("Greg Panczner", "1/20/1955", 22.78);
+	data bp("Beverly Provost", "12/29/1965", -78.88);
+	data zr("Ryan Zurrin", "7/22/1981", 55.55);
+	data pg("Greg Panczner", "1/20/1955", 22.78);
+	data pb("Beverly Provost", "12/29/1965", -78.88);
+	data removed;
 
 	test.addItem(3, rz);
 	test.addItem(2, bp);

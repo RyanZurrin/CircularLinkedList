@@ -1,8 +1,7 @@
 #pragma once
 #include <iostream>
-#include <utility>
-
 #include "CircularLinked.h"
+
 
 inline CircularLinkedList::CircularLinkedList()//tested and working
 {
@@ -28,16 +27,16 @@ inline CircularLinkedList::CircularLinkedList(int maxSize)//tested and working
 	curr = NULL;
 }//end overloaded constructor
 
-inline bool CircularLinkedList::addItem(int val, Data _d)//tested and working
+inline bool CircularLinkedList::addItem(int val, data _d)//tested and working
 {
-	Node* temp;
+	node* temp;
 
 	if (isFull())
 	{
 		//std::cout << "cant add list is full" << std::endl;
 		return false;
 	}
-	temp      = new Node;
+	temp      = new node;
 	temp->key = val;
 	temp->d   = _d;
 	curr      = start;
@@ -87,9 +86,9 @@ inline bool CircularLinkedList::addItem(int val, Data _d)//tested and working
 	}
 }//end addItem
 
-inline bool CircularLinkedList::deleteItem(int val, Data& _d)//tested and working
+inline bool CircularLinkedList::deleteItem(int val, data& _d)//tested and working
 {
-	Node* temp;
+	node* temp;
 	if(isEmpty()) {
 		//std::cout <<" list not initialized." << std::endl;
 		return false;
@@ -149,7 +148,7 @@ inline bool CircularLinkedList::deleteItem(int val, Data& _d)//tested and workin
 }//end deleteItem
 
 
-inline bool CircularLinkedList::getItem(int val, Data& _d)//tested and working
+inline bool CircularLinkedList::getItem(int val, data& _d)//tested and working
 {
 
 	if (isEmpty())
@@ -249,7 +248,7 @@ inline bool CircularLinkedList::isEmpty()const//tested and working
 
 inline bool CircularLinkedList::makeEmpty()//tested and working
 {
-	Node* temp;
+	node* temp;
 	for (; curr->next != start; curr = curr->next){}
 	if (qty == 0)
 	{
@@ -275,7 +274,7 @@ inline bool CircularLinkedList::makeEmpty()//tested and working
 
 inline void CircularLinkedList::displayKeys()const//tested and working
 {
-	Node* printer;
+	node* printer;
 
 	if(start != NULL)
 	{
@@ -292,7 +291,7 @@ inline void CircularLinkedList::displayKeys()const//tested and working
 inline void CircularLinkedList::displayData(const int _key = -1)
 {
 	//std::cout << "in data printer start"<<std::endl;
-	Node* dPrinter;
+	node* dPrinter;
 	if (start == NULL)
 	{
 		std::cout << "List has no data to print" << std::endl;
